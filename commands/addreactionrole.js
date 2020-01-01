@@ -78,7 +78,7 @@ exports.run = async (client, msg, args) => {
 
   let array = client.reactionroles.get(msg.guild.id, "roles");
   let embed = new Discord.MessageEmbed()
-    .setAuthor("Jeux", msg.guild.iconURL)
+    .setAuthor("[Vérification]", msg.guild.iconURL)
     .setDescription(
       array2.map(
         i =>
@@ -87,7 +87,7 @@ exports.run = async (client, msg, args) => {
           )}\n`
       )
     )
-    .setColor("#7CFC00");
+    .setColor("#D21415");
   msg.channel.send(embed).then(m => {
     client.reactionroles.push(msg.guild.id, m.id, "ids");
     for (var i = 0; i < array.length; i++) {
