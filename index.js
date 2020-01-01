@@ -128,7 +128,7 @@ client.on("message", message => {
     message.channel.send({ files: ["./image/vert.png"] });
   }
   if (message.content.startsWith("reglement")) {
-    message.channel.send({ files: ["./image/Sanstifinaltre.png"] });
+    message.channel.send({ files: ["./image/reglement.png"] });
   }
    if (message.content.startsWith("team")) {
      message.channel.send({ files: ["./image/dd.png"] });
