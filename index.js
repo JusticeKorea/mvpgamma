@@ -125,4 +125,4 @@ client.on("message", message => {
 });
 
 client.on("ready", () => console.log("ready"));
-client.login("process.env.TOKEN");
+client.login(process.env.TOKEN);
