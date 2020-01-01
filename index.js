@@ -127,6 +127,12 @@ client.on("message", message => {
   if (message.content.startsWith("vert")) {
     message.channel.send({ files: ["./image/vert.png"] });
   }
+  if (message.content.startsWith("reglement")) {
+    message.channel.send({ files: ["./image/Sanstifinaltre.png"] });
+  }
+   if (message.content.startsWith("team")) {
+     message.channel.send({ files: ["./image/dd.png"] });
+  }
 });
 
 client.login(process.env.TOKEN);
