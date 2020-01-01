@@ -134,12 +134,6 @@ client.on("message", message => {
   if (message.content.startsWith("team")) {
      message.channel.send({ files: ["./image/dd.png"] });
   }
-  if (message.content.startsWith("1")) {
-    message.channel.send("```💡 Afin de conserver une atmosphère agréable dans le discord, nous vous demanderons de suivre ces quelques règles```");
-  }
-  if (message.content.startsWith("2")) {
-    message.channel.send(```CSS🔰 [De manière générale]```);
-  }
 
 });
 client.on("message", async message => {
