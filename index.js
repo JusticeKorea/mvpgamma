@@ -136,7 +136,62 @@ client.on("message", message => {
      if (message.content.startsWith("1")) {
      message.channel.send("```💡 Afin de conserver une atmosphère agréable dans le discord, nous vous demanderons de suivre ces quelques règles```");
   }
-  
+    if (message.content.startsWith("2")) {
+     message.channel.send("```CSS
+🔰 [De manière générale]
+```");
+  }
+     if (message.content.startsWith("3")) {
+     message.channel.send("```
+• Votre comportement se doit d’être respectueux de tous.
+• Les contenus pornographiques, religieux et politiques ainsi que les propos discriminatoires sont strictement interdits.
+• Votre langage devra rester correct sur l'ensemble du serveur. 
+• Les pseudonymes ou noms de jeux inappropriés (pornographie, publicité, insultes ...) sont strictement interdits.
+• Vous serez tenus seul responsable du contenu que vous postez.
+• Il vous est interdit d'enregistrer les salons écrits et vocaux
+```");
+  }
+   if (message.content.startsWith("4")) {
+     message.channel.send("```CSS
+✏️ [Dans les salons écrits]
+```");
+  }
+   if (message.content.startsWith("5")) {
+     message.channel.send("```
+• Le spam, flood, spoil et abus d'emojis sera sanctionné.
+• La diffusion d'informations privées ou de photos sans l'accord de la personne est interdite.
+• La publicité n'est autorisée que dans le salon textuel #partages. Mais celle-ci reste interdite en Messages Privés.
+• Les commandes doivent être effectuées dans le #commandes-bots.
+• Il est strictement interdit de mentionner FuzeIII ou tout autre Youtubeur Ami. Les mentions de rôles sont à éviter sauf en cas de nécessité. Privilégiez les mentions uniques.
+```");
+  }
+  if (message.content.startsWith("6")) {
+    message.channel.send("```CSS
+🔊 [Dans les salons vocaux]
+```");
+  }
+   if (message.content.startsWith("7")) {
+     message.channel.send("```
+• Souffler dans son micro, utiliser un modificateur de voix ou des soundboards est interdit.
+• Le changement répétitif de channel vocal est interdit.
+• Le spam auditif ainsi que les screamers audios sont strictement interdits.
+• La musique n’est autorisée que dans les channels prévus à cet effet.
+```");
+  }
+   if (message.content.startsWith("8")) {
+     message.channel.send(```CSS
+📢 [Informations complémentaires]
+```);
+  }
+   if (message.content.startsWith("9")) {
+     message.channel.send("```
+• Vous êtes susceptibles d'être sanctionné en cas de manquement à l'une ou plusieurs de ces règles, et ce sans avertissement préalable. 
+• La modération se réserve le droit de vous sanctionner pour une raison n'étant pas précisée dans le règlement si votre comportement est inapproprié
+• Seuls les modérateurs sont en mesure de faire respecter le règlement.
+```");
+  }
+
+
 });
 
 client.login(process.env.TOKEN);
