@@ -3,6 +3,11 @@ const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL"] });
 const fs = require("fs");
 const enmap = require("enmap");
 
+client.once("ready", () => {
+  console.log("Ready!");
+  client.user.setActivity(".rien ➜ 🔎", { type: "WATCHING" });
+});
+
 client.commands = new Discord.Collection();
 client.reactionroles = new enmap({ name: "reactionroles" });
 fs.readdir("./commands/", (err, files) => {
@@ -124,5 +129,4 @@ client.on("message", message => {
   }
 });
 
-client.on("ready", () => console.log("ready"));
 client.login(process.env.TOKEN);
