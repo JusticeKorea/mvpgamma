@@ -87,7 +87,7 @@ exports.run = async (client, msg, args) => {
           )}\n`
       )
     )
-    .setColor("#D21415");
+    .setColor("#28bcec");
   msg.channel.send(embed).then(m => {
     client.reactionroles.push(msg.guild.id, m.id, "ids");
     for (var i = 0; i < array.length; i++) {
