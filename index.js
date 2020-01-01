@@ -130,15 +130,25 @@ client.on("message", message => {
   if (message.content.startsWith("reglement")) {
     message.channel.send({ files: ["./image/reglement.png"] });
   }
-   if (message.content.startsWith("team")) {
+  if (message.content.startsWith("team")) {
      message.channel.send({ files: ["./image/dd.png"] });
   }
-    if (message.content.startsWith("1")) {
+  if (message.content.startsWith("1")) {
     message.channel.send("```💡 Afin de conserver une atmosphère agréable dans le discord, nous vous demanderons de suivre ces quelques règles```");
   }
   if (message.content.startsWith("2")) {
     message.channel.send(```CSS🔰 [De manière générale]```);
   }
+    if(command === "say") {
+    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    message.delete().catch(O_o=>{}); 
+    // And we get the bot to say the thing: 
+    message.channel.send(sayMessage);
+  }
+
 
 
 });
