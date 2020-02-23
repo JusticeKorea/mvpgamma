@@ -169,7 +169,7 @@ client.on("message", async message => {
 });
 
 var reqTimer = setTimeout(function wakeUp() {
-   request("https://dashboard.heroku.com/apps/mvpbeta1", function() {
+   request("https://mvpbeta1.herokuapp.com/", function() {
       console.log("WAKE UP DYNO");
    });
    return reqTimer = setTimeout(wakeUp, 1200000);
